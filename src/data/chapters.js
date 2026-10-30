@@ -1,0 +1,21 @@
+// Provisional order supplied in the brief. Verify against Assignment_1863498.pptx.
+export const chapters = [
+  ['cover', 'Cover', 'Front matter'],
+  ['ai-declaration', 'AI Declaration', 'Front matter'],
+  ['problem-background', 'Problem Background', 'The report'],
+  ['analytical-pin', 'Analytical Calculation — Coupling Pin', 'The report'],
+  ['analytical-link', 'Analytical Calculation — Coupling Link', 'The report'],
+  ['analytical-screw', 'Analytical Calculation — Screw', 'The report'],
+  ['cad-and-dimensions', 'CAD and Dimensions', 'The report'],
+  ['materials', 'Materials', 'The report'],
+  ['fea-contacts', 'FEA Contacts', 'The report'],
+  ['fea-mesh', 'FEA Mesh', 'The report'],
+  ['loads-and-boundary-conditions', 'Loads and Boundary Conditions', 'The report'],
+  ['solution-settings', 'Solution Settings and Convergence', 'The report'],
+  ['comparison-pin', 'FEA vs Analytical Comparison — Pin', 'Results & closing'],
+  ['comparison-link', 'FEA vs Analytical Comparison — Link', 'Results & closing'],
+  ['comparison-screw', 'FEA vs Analytical Comparison — Screw', 'Results & closing'],
+  ['general-results', 'General Results and Discussion', 'Results & closing'],
+  ['mesh-independence', 'Mesh Independence and Optimisation', 'Results & closing'],
+  ['references', 'References', 'Results & closing'],
+].map(([slug, title, group], index) => ({ slug, title, group, index, path: index === 0 ? '/' : `/report/${slug}` }));
